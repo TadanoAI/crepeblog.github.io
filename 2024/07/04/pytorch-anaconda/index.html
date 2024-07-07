@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>anaconda配置与基础指令 | 奶油可丽饼🍭</title><meta name="author" content="奶油可丽饼🍭"><meta name="copyright" content="奶油可丽饼🍭"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本篇是关于Anaconda的配置与指令">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>anaconda配置与基础指令 | 奶油可丽饼🍭</title><meta name="author" content="奶油可丽饼🍭"><meta name="copyright" content="奶油可丽饼🍭"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.摘要本篇是关于Anaconda的配置与指令，在visual studio code 和PyCham 环境下配置的设置 如果已经熟悉配置可以通过目录直接翻到最后查看常用命令  参考内容 【Anaconda+VScode安装与配置】 https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1bQ4y1n7sn&#x2F;?share_source&#x3D;copy_web&amp;vd_source&#x3D;b0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="anaconda配置与基础指令">
 <meta property="og:url" content="https://blog.creamcrepe.icu/2024/07/04/pytorch-anaconda/index.html">
 <meta property="og:site_name" content="奶油可丽饼🍭">
-<meta property="og:description" content="本篇是关于Anaconda的配置与指令">
+<meta property="og:description" content="1.摘要本篇是关于Anaconda的配置与指令，在visual studio code 和PyCham 环境下配置的设置 如果已经熟悉配置可以通过目录直接翻到最后查看常用命令  参考内容 【Anaconda+VScode安装与配置】 https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1bQ4y1n7sn&#x2F;?share_source&#x3D;copy_web&amp;vd_source&#x3D;b0">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png">
 <meta property="article:published_time" content="2024-07-04T10:22:13.000Z">
-<meta property="article:modified_time" content="2024-07-04T12:11:56.117Z">
+<meta property="article:modified_time" content="2024-07-07T06:41:09.258Z">
 <meta property="article:author" content="奶油可丽饼🍭">
 <meta property="article:tag" content="pytorch">
 <meta name="twitter:card" content="summary">
@@ -55,8 +55,8 @@
   isPost: true,
   isHome: false,
   isHighlightShrink: ture,
-  isToc: false,
-  postUpdate: '2024-07-04 20:11:56'
+  isToc: true,
+  postUpdate: '2024-07-07 14:41:09'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -174,9 +174,328 @@
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/06/26/zjr3sIaPb9TQJC8.jpg" onerror="onerror=null;src='https://s2.loli.net/2024/06/27/ogFMRzISiKtZVal.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/NAS/"><i class="fa-fw fas fa-floppy-disk"></i><span> NAS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png')"><nav id="nav"><span id="blog-info"><a href="/" title="奶油可丽饼🍭"><span class="site-name">奶油可丽饼🍭</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/NAS/"><i class="fa-fw fas fa-floppy-disk"></i><span> NAS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">anaconda配置与基础指令</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-04T10:22:13.000Z" title="发表于 2024-07-04 18:22:13">2024-07-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-04T12:11:56.117Z" title="更新于 2024-07-04 20:11:56">2024-07-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="anaconda配置与基础指令"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>本篇是关于Anaconda的配置与指令</p>
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/06/26/zjr3sIaPb9TQJC8.jpg" onerror="onerror=null;src='https://s2.loli.net/2024/06/27/ogFMRzISiKtZVal.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/NAS/"><i class="fa-fw fas fa-floppy-disk"></i><span> NAS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png')"><nav id="nav"><span id="blog-info"><a href="/" title="奶油可丽饼🍭"><span class="site-name">奶油可丽饼🍭</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/NAS/"><i class="fa-fw fas fa-floppy-disk"></i><span> NAS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">anaconda配置与基础指令</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-04T10:22:13.000Z" title="发表于 2024-07-04 18:22:13">2024-07-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-07T06:41:09.258Z" title="更新于 2024-07-07 14:41:09">2024-07-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="anaconda配置与基础指令"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="1-摘要"><a href="#1-摘要" class="headerlink" title="1.摘要"></a>1.摘要</h3><p><strong>本篇是关于Anaconda的配置与指令，在visual studio code 和PyCham 环境下配置的设置</strong></p>
+<p>如果已经熟悉配置可以通过目录直接翻到最后查看常用命令</p>
 <p><img src="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png" alt="Python.png"></p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.creamcrepe.icu">奶油可丽饼🍭</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.creamcrepe.icu/2024/07/04/pytorch-anaconda/">https://blog.creamcrepe.icu/2024/07/04/pytorch-anaconda/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.creamcrepe.icu" target="_blank">奶油可丽饼🍭</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/pytorch/">pytorch</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/07/05/iiot-esp8266-web/" title="搭建简单的web控制台对esp8266进行控制"><img class="cover" src="https://s2.loli.net/2024/06/27/PA6cJsgNnvCM2hp.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">搭建简单的web控制台对esp8266进行控制</div></div></a></div><div class="next-post pull-right"><a href="/2024/07/03/math-matlab-setting2/" title="Matlab学习2"><img class="cover" src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Matlab学习2</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/06/26/pytorch-setting/" title="关于pytoch配置问题"><img class="cover" src="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="title">关于pytoch配置问题</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2024/06/26/zjr3sIaPb9TQJC8.jpg" onerror="this.onerror=null;this.src='https://s2.loli.net/2024/06/27/ogFMRzISiKtZVal.gif'" alt="avatar"/></div><div class="author-info__name">奶油可丽饼🍭</div><div class="author-info__description">病名唯爱</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/TadanoAI"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://space.bilibili.com/13763517?spm_id_from=333.1007.0.0" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #ff8aad;"></i></a><a class="social-icon" href="https://github.com/TadanoAI" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://x.com/CrepeA1" target="_blank" title="twitter"><i class="fab fa-x-twitter" style="color: ;"></i></a><a class="social-icon" href="https://qm.qq.com/q/y8jsnBRbaw" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #74C0FC;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/griffithprprpr/" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: ;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/07/05/iiot-esp8266-web/" title="搭建简单的web控制台对esp8266进行控制"><img src="https://s2.loli.net/2024/06/27/PA6cJsgNnvCM2hp.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建简单的web控制台对esp8266进行控制"/></a><div class="content"><a class="title" href="/2024/07/05/iiot-esp8266-web/" title="搭建简单的web控制台对esp8266进行控制">搭建简单的web控制台对esp8266进行控制</a><time datetime="2024-07-05T07:59:52.000Z" title="发表于 2024-07-05 15:59:52">2024-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/04/pytorch-anaconda/" title="anaconda配置与基础指令"><img src="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="anaconda配置与基础指令"/></a><div class="content"><a class="title" href="/2024/07/04/pytorch-anaconda/" title="anaconda配置与基础指令">anaconda配置与基础指令</a><time datetime="2024-07-04T10:22:13.000Z" title="发表于 2024-07-04 18:22:13">2024-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/03/math-matlab-setting2/" title="Matlab学习2"><img src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Matlab学习2"/></a><div class="content"><a class="title" href="/2024/07/03/math-matlab-setting2/" title="Matlab学习2">Matlab学习2</a><time datetime="2024-07-02T16:00:00.000Z" title="发表于 2024-07-03 00:00:00">2024-07-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/03/math-matlab-setting3/" title="Matlab学习3"><img src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Matlab学习3"/></a><div class="content"><a class="title" href="/2024/07/03/math-matlab-setting3/" title="Matlab学习3">Matlab学习3</a><time datetime="2024-07-02T16:00:00.000Z" title="发表于 2024-07-03 00:00:00">2024-07-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/26/math-matlab-setting1/" title="Matlab学习1"><img src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Matlab学习1"/></a><div class="content"><a class="title" href="/2024/06/26/math-matlab-setting1/" title="Matlab学习1">Matlab学习1</a><time datetime="2024-06-26T15:29:06.000Z" title="发表于 2024-06-26 23:29:06">2024-06-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By 奶油可丽饼🍭</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script async src="/js/title.js"></script><script defer="defer" id="fluttering_ribbon" mobile="ture" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+<p><strong>参考内容</strong></p>
+<p>【Anaconda+VScode安装与配置】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bQ4y1n7sn/?share_source=copy_web&vd_source=b00375b8765cc533f81ef034ac277281">https://www.bilibili.com/video/BV1bQ4y1n7sn/?share_source=copy_web&amp;vd_source=b00375b8765cc533f81ef034ac277281</a></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=705625551&bvid=BV1bQ4y1n7sn&cid=1326839097&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+<p>【Anaconda+PyCharm安装与配置】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Vu411Y7gL/?share_source=copy_web&vd_source=b00375b8765cc533f81ef034ac277281">https://www.bilibili.com/video/BV1Vu411Y7gL/?share_source=copy_web&amp;vd_source=b00375b8765cc533f81ef034ac277281</a></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=529624172&bvid=BV1Vu411Y7gL&cid=1156933047&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+
+<h3 id="2-下载源"><a href="#2-下载源" class="headerlink" title="2.下载源"></a>2.下载源</h3><p><a target="_blank" rel="noopener" href="https://www.anaconda.com/download">anaconda下载链接【官网】</a></p>
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">visual studio code下载链接【官网】</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jetbrains.com.cn/pycharm/download/?section=windows">pycharm 下载链接【官网】</a></p>
+<h3 id="3-配置"><a href="#3-配置" class="headerlink" title="3.配置"></a>3.配置</h3><p>下载完后依次进行<strong>更改环境变量</strong>-</p>
+<h4 id="更改环境变量："><a href="#更改环境变量：" class="headerlink" title="更改环境变量："></a>更改环境变量：</h4><p>在windows搜索框中搜索<strong>编辑系统环境变量</strong></p>
+<p><img src="https://s2.loli.net/2024/07/07/zoFyWI9aUwYiu2D.png" alt="image-20240707123038828"></p>
+<p>打开后，在<strong>高级-环境变量-选择Path环境-编辑-新建</strong>新建3个环境变量把anaconda<code>文件路径</code>，<code>Scripts</code>路径，与<code>bin</code>路径写入</p>
+<p>分别为<code>.\Anaconda</code>和<code>.\Anaconda\Scripts</code>和<code>.\Anaconda\Library\bin</code></p>
+<p><img src="https://s2.loli.net/2024/07/07/nUBXS37dbQwTjtf.png" alt="image-20240707123526104"></p>
+<h4 id="查看当前配置信息："><a href="#查看当前配置信息：" class="headerlink" title="查看当前配置信息："></a>查看当前配置信息：</h4><p> 打开<strong>Anaconda Prompt</strong>在<code>base</code>环境中输入</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python</span><br></pre></td></tr></table></figure>
+
+<p>可以查询<strong>当前电脑安装python版本</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit()</span><br></pre></td></tr></table></figure>
+
+<p>来<strong>退出当前python环境</strong></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info</span><br></pre></td></tr></table></figure>
+
+<p>来查询anaconda<strong>当前配置信息</strong>;例如</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">active environment : base </span><br><span class="line">    active env location : D:\software\Anaconda</span><br><span class="line">            shell level : <span class="number">1</span></span><br><span class="line">       user config file : C:\Users\TadanoAI\.condarc</span><br><span class="line"> populated config files : C:\Users\TadanoAI\.condarc</span><br><span class="line">          conda version : <span class="number">24.1</span>.<span class="number">2</span></span><br><span class="line">    conda<span class="literal">-build</span> version : <span class="number">24.1</span>.<span class="number">2</span></span><br><span class="line">         python version : <span class="number">3.11</span>.<span class="number">7</span>.final.<span class="number">0</span></span><br><span class="line">                 solver : libmamba (default)</span><br><span class="line">       virtual packages : __archspec=<span class="number">1</span>=x86_64</span><br><span class="line">                          __conda=<span class="number">24.1</span>.<span class="number">2</span>=<span class="number">0</span></span><br><span class="line">                          __win=<span class="number">0</span>=<span class="number">0</span></span><br><span class="line">       base environment : D:\software\Anaconda  (writable)</span><br><span class="line">      conda av <span class="keyword">data</span> <span class="built_in">dir</span> : D:\software\Anaconda\etc\conda</span><br><span class="line">  conda av metadata url : None</span><br><span class="line">           channel URLs : https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/win<span class="literal">-64</span></span><br><span class="line">                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/noarch</span><br><span class="line">                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/win<span class="literal">-64</span></span><br><span class="line">                          https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/noarch</span><br><span class="line">                          https://repo.anaconda.com/pkgs/main/win<span class="literal">-64</span></span><br><span class="line">                          https://repo.anaconda.com/pkgs/main/noarch</span><br><span class="line">                          https://repo.anaconda.com/pkgs/<span class="built_in">r</span>/win<span class="literal">-64</span></span><br><span class="line">                          https://repo.anaconda.com/pkgs/<span class="built_in">r</span>/noarch</span><br><span class="line">                          https://repo.anaconda.com/pkgs/msys2/win<span class="literal">-64</span></span><br><span class="line">                          https://repo.anaconda.com/pkgs/msys2/noarch</span><br><span class="line">          package cache : D:\software\Anaconda\pkgs</span><br><span class="line">                          C:\Users\TadanoAI\.conda\pkgs</span><br><span class="line">                          C:\Users\TadanoAI\AppData\Local\conda\conda\pkgs</span><br><span class="line">       envs directories : D:\software\Anaconda\envs</span><br><span class="line">                          D:\software\anaconda\envs</span><br><span class="line">                          C:\Users\TadanoAI\.conda\envs</span><br><span class="line">                          C:\Users\TadanoAI\AppData\Local\conda\conda\envs</span><br><span class="line">               platform : win<span class="literal">-64</span></span><br><span class="line">             user<span class="literal">-agent</span> : conda/<span class="number">24.1</span>.<span class="number">2</span> requests/<span class="number">2.31</span>.<span class="number">0</span> CPython/<span class="number">3.11</span>.<span class="number">7</span> Windows/<span class="number">10</span> Windows/<span class="number">10.0</span>.<span class="number">19045</span> solver/libmamba conda<span class="literal">-libmamba-solver</span>/<span class="number">24.1</span>.<span class="number">0</span> libmambapy/<span class="number">1.5</span>.<span class="number">6</span> aau/<span class="number">0.4</span>.<span class="number">3</span> c/_3QVKVtWOdC33ghVTmfdbA s/Du0jAcX40c27VXOj7yOtRA e/QJDO7<span class="literal">-bZWYQBL0JDWj-Jlw</span></span><br><span class="line">          administrator : False</span><br><span class="line">             netrc file : None</span><br><span class="line">           offline mode : False</span><br></pre></td></tr></table></figure>
+
+<p><strong>上列信息中注释【从上往下】：</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称：</th>
+<th align="center">解释</th>
+<th>当前参数</th>
+<th align="center">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>active environment</td>
+<td align="center">当前激活的环境名称</td>
+<td>base</td>
+<td align="center">基础环境</td>
+</tr>
+<tr>
+<td>active env location</td>
+<td align="center">当前激活的环境名称安装位置</td>
+<td>D:\software\Anaconda</td>
+<td align="center">路径</td>
+</tr>
+<tr>
+<td>shell level</td>
+<td align="center">当前环境的嵌套级别。0 表示 base 环境，1 表示第一个激活的环境，以此类推</td>
+<td>1</td>
+<td align="center">第一个激活的环境</td>
+</tr>
+<tr>
+<td>user config file</td>
+<td align="center">用户配置文件的路径，一般是 <code>.condarc</code> 文件的位置</td>
+<td>C:\Users\TadanoAI.condarc</td>
+<td align="center">路径</td>
+</tr>
+<tr>
+<td>populated config files</td>
+<td align="center"></td>
+<td>C:\Users\TadanoAI.condarc</td>
+<td align="center">路径</td>
+</tr>
+<tr>
+<td>conda version</td>
+<td align="center">安装的 Conda 版本号</td>
+<td>24.1.2</td>
+<td align="center">版本号</td>
+</tr>
+<tr>
+<td>conda-build version</td>
+<td align="center">安装的 <code>conda-build</code> 工具的版本号，用于创建 Conda 包</td>
+<td>24.1.2</td>
+<td align="center">版本号</td>
+</tr>
+<tr>
+<td>python version</td>
+<td align="center">当前环境中安装的 Python 版本</td>
+<td>3.11.7.final.0</td>
+<td align="center">python版本</td>
+</tr>
+<tr>
+<td>solver</td>
+<td align="center">Conda 使用的求解器，用于解决包的依赖关系</td>
+<td>libmamba (default)</td>
+<td align="center">解释器</td>
+</tr>
+<tr>
+<td>virtual packages</td>
+<td align="center">虚拟包的信息，通常是操作系统和硬件相关的包</td>
+<td>__archspec&#x3D;1&#x3D;x86_64<br/>                          __conda&#x3D;24.1.2&#x3D;0<br/>                          __win&#x3D;0&#x3D;0</td>
+<td align="center">配置代码</td>
+</tr>
+<tr>
+<td>base environment</td>
+<td align="center">base 环境的路径，通常是 Anaconda 或 Miniconda 的安装目录</td>
+<td>D:\software\Anaconda  (writable)</td>
+<td align="center">路径</td>
+</tr>
+<tr>
+<td>conda av data dir</td>
+<td align="center">Conda 已激活的数据目录，通常用于存储环境和包的相关数据</td>
+<td>D:\software\Anaconda\etc\conda</td>
+<td align="center">路径</td>
+</tr>
+<tr>
+<td>conda av metadata url</td>
+<td align="center">Conda 已激活的元数据 URL，通常用于获取包和环境的相关信息</td>
+<td>None</td>
+<td align="center">URL</td>
+</tr>
+<tr>
+<td>channel URLs</td>
+<td align="center">当前使用的 Conda 渠道 URL 列表，用于查找和下载包</td>
+<td>URL</td>
+<td align="center">URL</td>
+</tr>
+<tr>
+<td>package cache</td>
+<td align="center">Conda 包缓存目录，用于存储下载的包以供重复使用</td>
+<td>D:\software\Anaconda\pkgs</td>
+<td align="center">路径</td>
+</tr>
+<tr>
+<td>platform</td>
+<td align="center">操作系统平台（例如 <code>win-64</code>, <code>linux-64</code>）</td>
+<td>win-64</td>
+<td align="center">环境名称</td>
+</tr>
+<tr>
+<td>user-agent</td>
+<td align="center">当前 Conda 运行时的用户代理字符串，包含平台、Python 版本等信息</td>
+<td></td>
+<td align="center">信息</td>
+</tr>
+<tr>
+<td>administrator</td>
+<td align="center">当前是否以管理员权限运行</td>
+<td>False</td>
+<td align="center">是or否</td>
+</tr>
+<tr>
+<td>netrc file</td>
+<td align="center"><code>netrc</code> 文件的路径，用于存储网络认证信息。</td>
+<td>None</td>
+<td align="center">路径&#x2F;None</td>
+</tr>
+<tr>
+<td>offline mode</td>
+<td align="center">是否启用了离线模式</td>
+<td>False</td>
+<td align="center">是or否</td>
+</tr>
+</tbody></table>
+<h4 id="anaconda换源："><a href="#anaconda换源：" class="headerlink" title="anaconda换源："></a>anaconda换源：</h4><p>国内用户可以更换 Conda下载包渠道URL列表，下载速度可以相对来说更快一些</p>
+<p>在<code>base</code>环境下运行下列命令【清华源】</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda config <span class="literal">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config <span class="literal">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config <span class="literal">--set</span> show_channel_urls yes</span><br></pre></td></tr></table></figure>
+
+<p>添加完毕后通过info指令查看URL是否添加进入channel URLs</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info</span><br></pre></td></tr></table></figure>
+
+<h4 id="更改anaconda虚拟环境默认安装位置："><a href="#更改anaconda虚拟环境默认安装位置：" class="headerlink" title="更改anaconda虚拟环境默认安装位置："></a>更改anaconda虚拟环境默认安装位置：</h4><p>默认虚拟环境一般是在C盘中的，anaconda又不在同一盘符中，不便于管理，最好放置在同一位置把他放进<code>.\anaconda\envs</code>这个路径中，跟anaconda安装文件放一起</p>
+<p>在<code>base</code>环境下运行下列命令【更改路径】</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config <span class="literal">--add</span> envs_dirs D:\software\anaconda\envs <span class="comment">#这是我自己的路径，每个人路径不一样，需要自行修改</span></span><br></pre></td></tr></table></figure>
+
+<p>同样的，添加完毕后通过info指令查看是否修改</p>
+<p>完毕后，</p>
+<p>切记修改文件夹权限！</p>
+<p>切记修改文件夹权限！</p>
+<p>切记修改文件夹权限！</p>
+<p>否则会可能导致环境装不进去</p>
+<p>打开<code>.\anaconda</code>右键envs文件夹<strong>属性-安全-编辑-点击组或对象名</strong>（选择安装的哪个【所有user或者自己】）-勾选完全控制，修改，读取和执行，列出文件夹内容，读取，写入<strong>六个权限全部允许</strong></p>
+<p><img src="https://s2.loli.net/2024/07/07/CrR5IyUF4bE8vLP.png" alt="image-20240707133828292"></p>
+<h3 id="4-新建环境："><a href="#4-新建环境：" class="headerlink" title="4.新建环境："></a>4.新建环境：</h3><p>至此anaconda配置完毕，现在开始搭建新的python环境</p>
+<h4 id="查询当前已有环境："><a href="#查询当前已有环境：" class="headerlink" title="查询当前已有环境："></a>查询当前已有环境：</h4><p>通过conda env list指令可以查看当前已安装环境</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br></pre></td></tr></table></figure>
+
+<h4 id="新建虚拟环境："><a href="#新建虚拟环境：" class="headerlink" title="新建虚拟环境："></a>新建虚拟环境：</h4><p>创建</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create <span class="literal">-n</span> yourname python=<span class="number">3.8</span></span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create <span class="literal">--name</span> yourname python=<span class="number">3.8</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>注释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>create</td>
+<td>创建</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>环境名称</td>
+</tr>
+<tr>
+<td>–name</td>
+<td>环境名称</td>
+</tr>
+<tr>
+<td>【yourname】</td>
+<td>要取的环境名字</td>
+</tr>
+<tr>
+<td>pytohon&#x3D;</td>
+<td>py下载版本</td>
+</tr>
+</tbody></table>
+<p>输入y同意进入下一步直到新建完成</p>
+<h4 id="启动环境："><a href="#启动环境：" class="headerlink" title="启动环境："></a>启动环境：</h4><p>把当前环境转为【yourname】环境</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate yourname</span><br></pre></td></tr></table></figure>
+
+<h4 id="删除环境"><a href="#删除环境" class="headerlink" title="删除环境:"></a>删除环境:</h4><p>切记如果要删除【yourname】环境需要改变当前环境不能为【yourname】</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove <span class="literal">-n</span> yourname <span class="literal">--all</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="安装库："><a href="#安装库：" class="headerlink" title="安装库："></a>安装库：</h4><p>第一步先启动环境</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate yourname</span><br></pre></td></tr></table></figure>
+
+<p>第二部开始就与python环境的pip安装没差，安装要装的库</p>
+<p>pip 列表</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip list</span><br></pre></td></tr></table></figure>
+
+<p>pip 安装</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install <span class="comment">#你要装的库</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="指定源安装库【清华】"><a href="#指定源安装库【清华】" class="headerlink" title="指定源安装库【清华】"></a>指定源安装库【清华】</h4><p>以opencv为例子</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install opencv<span class="literal">-python</span> <span class="literal">-i</span> https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-VScode配置："><a href="#5-VScode配置：" class="headerlink" title="5.VScode配置："></a>5.VScode配置：</h3><p>anaconda配置与新建学会后，开始配置到vscode编辑器</p>
+<p>随便新建一个.py文件，打勾✔信任</p>
+<p>点击左侧拓展图标或者<code>ctrl+shift+X</code>打开拓展界面搜索<strong>python</strong>安装语言拓展</p>
+<p>有些版本会不信任，需要点进去<strong>python插件界面</strong>点击<strong>Trust</strong>信任设备才能执行</p>
+<p>安装完成后配置解释器，在搜索栏中输入<code>&gt;Python:Select Interpreter</code>来选择解释器</p>
+<p><img src="https://s2.loli.net/2024/07/07/XRYkUjG8KefiPwI.png" alt="image-20240707140518103"></p>
+<p>**Enter Interpreter Path输入解释器路径-Find…查找-**选择conda根目录<code>.\anaconda</code>下python.exe,不是w那个</p>
+<p><img src="https://s2.loli.net/2024/07/07/arb7kjLn2IpQolH.png" alt="image-20240707141049879"></p>
+<p>.py界面中右下角会有python解释器环境</p>
+<p><img src="https://s2.loli.net/2024/07/07/J1eiyCdQIWf2z6k.png" alt="image-20240707141730325"></p>
+<p>点击运行看看能不能执行</p>
+<p><img src="https://s2.loli.net/2024/07/07/Yh4MiXgFrufoQtD.png" alt="image-20240707142030299"></p>
+<h3 id="6-Pycharm配置："><a href="#6-Pycharm配置：" class="headerlink" title="6.Pycharm配置："></a>6.Pycharm配置：</h3><p>anaconda配置与新建学会后，开始配置到Pycharm IDE</p>
+<h4 id="先前配置的解释器："><a href="#先前配置的解释器：" class="headerlink" title="先前配置的解释器："></a>先前配置的解释器：</h4><p>随便新建一个项目</p>
+<p>选择<strong>先前配置的解释器-添加解释器-添加本地解释器-conda环境-找到conda可执行文件conda.exe</strong>【都在<code>.\Anaconda\Scripts\conda.exe</code>】**-加载环境-使用现有环境-选择【yourname】**</p>
+<p><img src="https://s2.loli.net/2024/07/07/Xn7Zp6HKoIv8ilq.png" alt="image-20240707143000787"></p>
+<h4 id="新建解释器："><a href="#新建解释器：" class="headerlink" title="新建解释器："></a>新建解释器：</h4><p>随便新建一个项目</p>
+<p>选择<strong>使用此工具新建环境-Conda</strong></p>
+<p><strong>位置：</strong>把在<code>C:</code>的目录改成<code>.\anaconda\envs\【yourname】</code></p>
+<p><strong>python版本：</strong>自行选择</p>
+<p><strong>conda可执行文件：</strong>选择anaconda根目录下的python.exe文件</p>
+<p><img src="https://s2.loli.net/2024/07/07/Pd6bFJlMmejWC7u.png" alt="image-20240707143931888"></p>
+<h3 id="7-anaconda常用命令："><a href="#7-anaconda常用命令：" class="headerlink" title="7.anaconda常用命令："></a>7.anaconda常用命令：</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看anaconda配置信息：</span></span><br><span class="line">conda info</span><br><span class="line"><span class="comment">#查看虚拟环境列表：</span></span><br><span class="line">conda env list</span><br><span class="line"><span class="comment">#anaconda换清华镜像源：</span></span><br><span class="line">conda config <span class="literal">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config <span class="literal">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config <span class="literal">--set</span> show_channel_urls yes</span><br><span class="line"><span class="comment">#更改anaconda虚拟环境默认安装位置：</span></span><br><span class="line">conda config <span class="literal">--add</span> envs_dirs D:\software\anaconda\envs</span><br><span class="line"><span class="comment">#新建虚拟环境：</span></span><br><span class="line">conda create <span class="literal">-n</span> yourname python=<span class="number">3.12</span> <span class="comment">#yourname指代项目环境名称，指定py版本</span></span><br><span class="line"><span class="comment">#启用虚拟环境</span></span><br><span class="line">conda activate yourname	<span class="comment">#yourname指代项目环境名称</span></span><br><span class="line"><span class="comment">#删除虚拟环境</span></span><br><span class="line">conda remove <span class="literal">-n</span> yourname <span class="literal">--all</span> </span><br><span class="line"><span class="comment">#指定源安装</span></span><br><span class="line">pip install opencv<span class="literal">-python</span> <span class="literal">-i</span> https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.creamcrepe.icu">奶油可丽饼🍭</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.creamcrepe.icu/2024/07/04/pytorch-anaconda/">https://blog.creamcrepe.icu/2024/07/04/pytorch-anaconda/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.creamcrepe.icu" target="_blank">奶油可丽饼🍭</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/pytorch/">pytorch</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/07/05/iiot-esp8266-web/" title="搭建简单的web控制台对esp8266进行控制"><img class="cover" src="https://s2.loli.net/2024/06/27/sM82Ee3QY6mSxAn.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">搭建简单的web控制台对esp8266进行控制</div></div></a></div><div class="next-post pull-right"><a href="/2024/07/03/math-matlab-setting2/" title="Matlab学习2"><img class="cover" src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Matlab学习2</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/06/26/pytorch-setting/" title="关于pytoch配置问题"><img class="cover" src="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="title">关于pytoch配置问题</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2024/06/26/zjr3sIaPb9TQJC8.jpg" onerror="this.onerror=null;this.src='https://s2.loli.net/2024/06/27/ogFMRzISiKtZVal.gif'" alt="avatar"/></div><div class="author-info__name">奶油可丽饼🍭</div><div class="author-info__description">病名唯爱</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/TadanoAI"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://space.bilibili.com/13763517?spm_id_from=333.1007.0.0" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #ff8aad;"></i></a><a class="social-icon" href="https://github.com/TadanoAI" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://x.com/CrepeA1" target="_blank" title="twitter"><i class="fab fa-x-twitter" style="color: ;"></i></a><a class="social-icon" href="https://qm.qq.com/q/y8jsnBRbaw" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #74C0FC;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/griffithprprpr/" target="_blank" title="Steam"><i class="fa-brands fa-steam" style="color: ;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">1.摘要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E6%BA%90"><span class="toc-number">2.</span> <span class="toc-text">2.下载源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">3.配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">更改环境变量：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF%EF%BC%9A"><span class="toc-number">3.2.</span> <span class="toc-text">查看当前配置信息：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#anaconda%E6%8D%A2%E6%BA%90%EF%BC%9A"><span class="toc-number">3.3.</span> <span class="toc-text">anaconda换源：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9anaconda%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%BB%98%E8%AE%A4%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%EF%BC%9A"><span class="toc-number">3.4.</span> <span class="toc-text">更改anaconda虚拟环境默认安装位置：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%96%B0%E5%BB%BA%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-number">4.</span> <span class="toc-text">4.新建环境：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%BD%93%E5%89%8D%E5%B7%B2%E6%9C%89%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-number">4.1.</span> <span class="toc-text">查询当前已有环境：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-number">4.2.</span> <span class="toc-text">新建虚拟环境：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-number">4.3.</span> <span class="toc-text">启动环境：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%8E%AF%E5%A2%83"><span class="toc-number">4.4.</span> <span class="toc-text">删除环境:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%BA%93%EF%BC%9A"><span class="toc-number">4.5.</span> <span class="toc-text">安装库：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E6%BA%90%E5%AE%89%E8%A3%85%E5%BA%93%E3%80%90%E6%B8%85%E5%8D%8E%E3%80%91"><span class="toc-number">4.6.</span> <span class="toc-text">指定源安装库【清华】</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-VScode%E9%85%8D%E7%BD%AE%EF%BC%9A"><span class="toc-number">5.</span> <span class="toc-text">5.VScode配置：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Pycharm%E9%85%8D%E7%BD%AE%EF%BC%9A"><span class="toc-number">6.</span> <span class="toc-text">6.Pycharm配置：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%88%E5%89%8D%E9%85%8D%E7%BD%AE%E7%9A%84%E8%A7%A3%E9%87%8A%E5%99%A8%EF%BC%9A"><span class="toc-number">6.1.</span> <span class="toc-text">先前配置的解释器：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E8%A7%A3%E9%87%8A%E5%99%A8%EF%BC%9A"><span class="toc-number">6.2.</span> <span class="toc-text">新建解释器：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-anaconda%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="toc-number">7.</span> <span class="toc-text">7.anaconda常用命令：</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/07/05/iiot-esp8266-web/" title="搭建简单的web控制台对esp8266进行控制"><img src="https://s2.loli.net/2024/06/27/sM82Ee3QY6mSxAn.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搭建简单的web控制台对esp8266进行控制"/></a><div class="content"><a class="title" href="/2024/07/05/iiot-esp8266-web/" title="搭建简单的web控制台对esp8266进行控制">搭建简单的web控制台对esp8266进行控制</a><time datetime="2024-07-05T07:59:52.000Z" title="发表于 2024-07-05 15:59:52">2024-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/04/pytorch-anaconda/" title="anaconda配置与基础指令"><img src="https://s2.loli.net/2024/06/27/fmDXNEvLjBu7ngq.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="anaconda配置与基础指令"/></a><div class="content"><a class="title" href="/2024/07/04/pytorch-anaconda/" title="anaconda配置与基础指令">anaconda配置与基础指令</a><time datetime="2024-07-04T10:22:13.000Z" title="发表于 2024-07-04 18:22:13">2024-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/03/math-matlab-setting2/" title="Matlab学习2"><img src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Matlab学习2"/></a><div class="content"><a class="title" href="/2024/07/03/math-matlab-setting2/" title="Matlab学习2">Matlab学习2</a><time datetime="2024-07-02T16:00:00.000Z" title="发表于 2024-07-03 00:00:00">2024-07-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/03/math-matlab-setting3/" title="Matlab学习3"><img src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Matlab学习3"/></a><div class="content"><a class="title" href="/2024/07/03/math-matlab-setting3/" title="Matlab学习3">Matlab学习3</a><time datetime="2024-07-02T16:00:00.000Z" title="发表于 2024-07-03 00:00:00">2024-07-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/26/math-matlab-setting1/" title="Matlab学习1"><img src="https://s2.loli.net/2024/06/27/dnzwbJmCQVe6aWM.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Matlab学习1"/></a><div class="content"><a class="title" href="/2024/06/26/math-matlab-setting1/" title="Matlab学习1">Matlab学习1</a><time datetime="2024-06-26T15:29:06.000Z" title="发表于 2024-06-26 23:29:06">2024-06-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By 奶油可丽饼🍭</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script async src="/js/title.js"></script><script defer="defer" id="fluttering_ribbon" mobile="ture" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
 var pjax = new Pjax({
   elements: 'a:not([target="_blank"])',
